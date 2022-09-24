@@ -1,0 +1,42 @@
+.container{
+    position: relative;
+}
+
+.resorts-list img {
+    border-radius: 1rem;
+    text-align: center;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    margin-bottom: 2rem;
+}
+
+.resorts__title-middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 15rem;
+    padding-left: 1rem;
+}
+
+.container:hover img {
+    filter: brightness(50%);
+    cursor: pointer;
+}
+
+.container:hover .resorts__title-middle {
+    opacity: 1;
+}
+
+.resorts__title-main{
+    color: white;
+}
+
+.resorts__description{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 400px) {
+    .resorts__title-middle{
+        top: 12rem;
+    }
+}

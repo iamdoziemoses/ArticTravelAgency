@@ -1,0 +1,38 @@
+.clients-section {
+    padding-left: 2rem;
+    display: flex;
+}
+
+.clients-section img{
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clients-section img:not(:first-child){
+       padding-left: 1rem;
+}
+
+.clients-section img:nth-child(4), 
+.clients-section img:nth-child(5),
+.clients-section img:nth-child(6){
+    display: none;
+}
+
+@media screen and (min-width: 768px){
+    .clients-section img{
+        width: 110px;
+    }
+
+    .clients-section img:nth-child(4), 
+    .clients-section img:nth-child(5),
+    .clients-section img:nth-child(6){
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1024px){
+     .clients-section {
+        justify-content: center;
+    }
+}

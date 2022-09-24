@@ -1,0 +1,70 @@
+.booking-container{
+    background: #fff;
+    box-shadow: 0px 4px 5px rgba(183, 183, 183, 0.07), 0px 16.7789px 24.1666px rgba(183, 183, 183, 0.035);
+    padding: 2rem 0;
+    position: relative;
+    bottom: 3rem;
+    border-radius: 1.6rem;
+} 
+
+.btn-booking{
+    text-align: center;
+}
+
+.booking-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+}
+
+.booking__description{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.booking__description span{
+    display: block;
+}
+
+.booking__description-sub{
+    color: #929191;
+}
+
+.booking__description-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.location{
+    color: #3E86F5;
+}
+
+.person {
+    color: #00C07B;
+}
+
+.check-in, .check-out{
+    color: #CC0024;
+}
+
+.booking__description-main{
+    font-weight: 500;
+}
+
+.dropdown {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .booking-section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2rem;
+}
+
+.booking__description-main{
+    display: block;
+}
+}

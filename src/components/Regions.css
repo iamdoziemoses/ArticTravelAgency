@@ -1,0 +1,32 @@
+.regions-intro {
+  margin-top: 10rem;
+}
+
+.regions-intro {
+    text-align: center;
+}
+
+.regions-intro p {
+    color: #929191;
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 400px){
+  .regions-intro h2{
+     font-size: 1.4rem;
+  }
+
+  .regions-intro p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .regions-intro h2{
+     font-size: 2rem;
+  }
+
+  .regions-intro p {
+    font-size: 1.2rem;
+  }
+}

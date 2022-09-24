@@ -1,0 +1,18 @@
+.resorts{
+    margin-top: 10rem;
+}
+
+.resorts .resorts__title{
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px){
+    .resorts__title {
+        font-size: 2rem;
+    }
+
+    .resort__images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+}

@@ -1,0 +1,15 @@
+.regionShowcase-container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.regionShowcase__data {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .regionShowcase-container {
+        grid-template-columns: repeat(1, 1fr);
+  }
+}

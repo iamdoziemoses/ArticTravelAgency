@@ -1,0 +1,151 @@
+.home__wrapper {
+    height: 100vh;
+    position: relative;
+}
+  
+.home__bgimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(60%);
+    object-fit: cover;
+    object-position: center;
+}
+  
+.home__data {
+    position: relative;
+    top: 13rem;
+    text-align: center;
+}
+
+.home__title,
+.home__description {
+  color: #fff;
+   
+}
+
+.btn{
+  margin-top: 1rem;
+}
+
+.btn-animate {
+    animation: moveinTop 1s ease-in-out;
+}
+
+.home__title {
+  font-size: 2rem;
+  animation: moveinLeft 1s ease-in-out;
+}
+
+/* .home__title-main,
+.home__title-sub {
+  display: block;
+} */
+
+/* .home__title-sub {
+  position: relative;
+  top: -1rem;
+} */
+
+.home__description {
+  animation: moveinRight 1s ease-in-out;
+}
+
+.book__description{
+  background-color: #F8F9FC;
+}
+
+@keyframes moveinLeft{
+  0%{
+    transform: translateX(-100px);
+  }
+
+  80%{
+    transform: translate(10px);
+  }
+
+  100%{
+    transform: translate(0);
+  }
+}
+
+@keyframes moveinTop{
+  0%{
+    transform: translateY(100px);
+  }
+
+  100%{
+    transform: translate(0);
+  }
+}
+
+@keyframes moveinRight{
+  0%{
+    transform: translateX(100px);
+  }
+
+  80%{
+    transform: translate(-10px);
+  }
+
+  100%{
+    transform: translate(0);
+  }
+}
+
+@media screen and (max-width: 400px){
+    .home__title {
+    font-size: 1.5rem;
+  }
+
+  .home__description {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+   .home__title {
+    font-size: 3.5rem;
+  }
+
+  .home__description {
+    font-size: 1.9rem;
+  }
+
+  .home__data{
+    position: relative;
+    top: 20rem;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .home__title {
+    font-size: 3.5rem;
+  }
+
+  .home__description {
+    font-size: 1.9rem;
+  }
+
+  .home__data{
+    position: relative;
+    top: 20rem;
+  }
+}
+
+@media screen and (min-width: 968px){
+  .home__title {
+    font-size: 4rem;
+  }
+
+  .home__description {
+    font-size: 2rem;
+  }
+
+   .home__data{
+    position: relative;
+    top: 15rem;
+  }
+}
